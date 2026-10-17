@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    height: 70px;
+    background: white;
+}
+
+.logo img {
+    width: 150px;
+    display: block;
+}
+
+.delivery {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.delivery .fa-location-dot,
+.search .fa-magnifying-glass,
+.login .fa-user {
+    color: #FFAE00;
+}
+
+.search,
+.login {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.login {
+    padding: 10px 18px;
+    color: #FF9900;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 174, 0, 0.25);
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    background: #FFC928;
+    padding: 40px 60px;
+    min-height: 310px;
+    overflow: hidden;
+}
+
+/* Hero Text */
+.hero-content {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    line-height: 1.15;
+    color: white;
+    margin-bottom: 8px;
+    text-transform: none;
+}
+
+.hero-content p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: none;
+}
+
+/* Order Card */
+.order-box {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+/* Delivery and Pickup */
+.order-options {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.order-options button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #FFF0E6;
+    color: #F17228;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Address Row */
+.address-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px;
+}
+
+.address-box > .fa-location-dot {
+    color: #F17228;
+    flex-shrink: 0;
+}
+
+.address-box input {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    padding: 12px;
+    border: none;
+    outline: none;
+    background: #F5F5F5;
+    border-radius: 5px;
+    font-size: 13px;
+}
+
+.address-box button {
+    padding: 12px 18px;
+    background: #F95720;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* Food Image */
+.hero-image {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    object-fit: contain;
+}
